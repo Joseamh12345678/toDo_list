@@ -32,5 +32,5 @@ const ActivitySchema = new Schema<IActivities>({
         ref:"users"
     }
 
-});
-export const UseModel = model<IActivities>('Activities',ActivitySchema)
+},{timestamps:true});
+export const ActivitiesModel = model<IActivities>('Activities',ActivitySchema)
